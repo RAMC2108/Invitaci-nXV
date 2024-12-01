@@ -1,8 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+HR+Lijeva:wght@100..400&display=swap);
+
 
 * {
     min-width: 0;
     font-family: 'Bad Script', cursive;
+  }
+  
+  span{
+    
+  font-family: "Dancing Script", cursive !important;
   }
   
   *,
