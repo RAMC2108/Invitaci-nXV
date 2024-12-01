@@ -455,13 +455,14 @@
   }
 
   .cinta img {
-      max-width: 90%;
+      max-width: 85%;
       height: auto;
   }
 
   .title-landing, .subtitle-landing {
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      text-align: center;
   }
 
   .first-letter:first-letter {
@@ -485,6 +486,7 @@
   .card-details {
       width: 100%;
       margin-bottom: 1rem;
+      text-align: center;
   }
 
   .card-details:before {
@@ -504,6 +506,7 @@
 
   .creative-cards .container .row .card-column {
       width: 100%;
+      padding: 10px 0;
   }
 }
 
