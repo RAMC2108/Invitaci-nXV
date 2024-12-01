@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Script para el contador
+    function iniciarContador(fechaObjetivo) {
+        const contador = document.getElementById("contador");
+        const fechaFinal = new Date(fechaObjetivo).getTime();
+
+        function actualizarContador() {
+            const ahora = new Date().getTime();
+            const diferencia = fechaFinal - ahora;
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            contador.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+
+            if (diferencia < 0) {
+                contador.innerHTML = "¡Evento iniciado!";
+            }
+        }
+        setInterval(actualizarContador, 1000);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => iniciarContador("2024-12-28T23:59:59"));
+</script>
+</head>
+<body>
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+  <main class="main">
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart"></span>
+      <p class="paper" id="mainMessage">
+        En este día especial, quiero invitarlos a mis quince años.
+      </p>
+      <div class="letter"></div>
+    </div>
+    <div class="options">
+      <button id="open">Abrir</button>
+    </div>
+  </main>
+<div id="carta" class="carta hidden">
+        <h1 class="title-landing">¡Estás invitado a mis XV años!</h1>
+    <div class="cinta dos">
+    <img src="./img/img2.jpeg" class="fita-wistia" alt="">
+</div>
+<hgroup>      
+        <p class="subtitle-landing">Detalles del evento</p>
+</hgroup>
+
+<section class="creative-cards style-one">
+    <div class="container">
+      <div class="two-row">
+        <div class="card-column">
+          <div class="card-details">
+            <div class="cinta uno">
+                <img src="./img/img1.jpeg"alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-column">
+            <div class="card-details">
+                <p class="first-letter">Fecha del evento : </p>
+        <p class="second-letter">Sábado 28 de Diciembre de 2024</p>
+        <p class="first-letter">Código de vestimenta: </p>
+        <p class="second-letter">Formal</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+        
+
+<section class="creative-cards style-one">
+                <div class="container">
+                  <div class="row">
+                    <div class="card-column">
+                      <div class="card-details">
+                        <div class="card-icons">
+                          <img class="light-icon" src="./img/familia.png" alt="icon" />
+                        </div>
+                        <p class="first-letter">Mis padres</p>
+                        <p>Yasmin Basulto Ucan</p>
+                        <p>Carlos Basto Arguelles</p>
+                      </div>
+                    </div>
+                    <div class="card-column">
+                      <div class="card-details">
+                        <div class="card-icons">
+                          <img class="light-icon" src="./img/itinerario.png" alt="icon" />
+                        </div>
+                        <p class="first-letter">Itinerario: </p>
+        <p>Misa 07:00 pm</p>
+        <p>Recepción: 09:00 pm</p>
+        <p>Presentación y bailes 10:00 pm</p>
+                      </div>
+                    </div>
+                    <div class="card-column">
+                      <div class="card-details">
+                        <div class="card-icons">
+                          <img class="light-icon" src="./img/tarjeta-de-regalo.png" alt="icon" />
+                        </div>
+                        <p class="first-letter">Lluvia de sobres</p>
+                        <p>Tu presencia es lo más importante para mí, pero si deseas dejarme elegir mi regalo, podrás depositarlo en un sobre que estará disponible en la fiesta.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="creative-cards style-one">
+                <div class="container">
+                  <div class="two-row">
+                    <div class="card-column">
+                      <div class="card-details">
+                        
+                        <p class="first-letter">Lugar de la Iglesia</p>
+                        <p>Cristo Resucitado </p>
+                        <p>Avenida 5 No. 111, entre Avenida 4, Col. Montecristo, C.P. 97133, Mérida, Yucatán, México.</p>
+                        <a href="https://maps.app.goo.gl/tLLv7PaumRQ36Z9i6" target="_blank">Ver mapa</a>
+                        <p class="first-letter">Lugar del evento:</p>
+                        <p>Villa Palacios: </p>
+                        <p>Tablaje 21366, entre 35-A y 48, Colonia San Juan Bautista, C.P. 97314, Mérida, Yucatán.</p>
+                        <a href="https://maps.app.goo.gl/phc6hgwFXnddjm3p7" target="_blank">Ver mapa</a>  
+                    </div>
+                    </div>
+                    <div class="card-column">
+                        <div class="card-details">
+                    <div class="cinta cuatro">
+                        <img src="./img/img4.jpeg"alt="">
+                    </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </section>
+
+            <hgroup>      
+                <p class="subtitle-landing">¡Información importante!</p>
+        </hgroup>
+        <p>Le sugerimos ser puntual pues me gustaría contar con su presencia desde el inicio del evento.</p>
+        <p class="first-letter">Teléfonos Para confirmar asistencia:</p>
+        <p>9993852454 Daila</p>
+        <p>999687878 Mamá</p>
+
+        <div class="cinta tres">
+            <img src="./img/img3.jpeg"alt="">
+        </div>
+
+        <p class="first-letter">Tiempo restante para el día del evento</p>
+        <p id="contador"></p>
+        <br>
+
+        <p>¡Los esperamos!</p>
+
+        <button id="close">Cerrar</button>
+        <br>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
