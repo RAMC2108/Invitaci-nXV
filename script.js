@@ -34,7 +34,7 @@ btnOpenElement.addEventListener('click', ()=> {
     document.querySelector('.main').classList.add('hidden');
     document.querySelector('.carta').classList.remove('hidden');
     document.documentElement.style.overflow = '';
-  },1800)
+  },2800)
 })
 btnCloseElement.addEventListener('click', ()=> {
 
